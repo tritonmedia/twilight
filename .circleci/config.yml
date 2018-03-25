@@ -43,3 +43,8 @@ workflows:
     jobs:
       - build:
           context: Docker
+          branches:
+            only:
+              - master
+              - stage
+              - develop
