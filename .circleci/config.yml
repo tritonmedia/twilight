@@ -1,0 +1,45 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker:17.05.0-ce-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - restore_cache:
+          keys:
+            - v1-{{ .Branch }}
+          paths:
+            - /caches/app.tar
+      - run: docker build -f .circleci/Dockerfile --cache-from=app -t app .
+      - run:
+          name: Save Docker image layer cache
+          command: |
+            mkdir -p /caches
+            docker save -o /caches/app.tar app
+      - save_cache:
+          key: v1-{{ .Branch }}-{{ epoch }}
+          paths:
+            - /caches/app.tar
+      - run:
+          name: Publish Docker Image
+          command: |
+            set -e
+            docker login --username "${DOCKER_USERNAME}" --password "${DOCKER_PASSWORD}"
+            case "$CIRCLE_BRANCH" in
+              master) export moving_tag="prod"
+                ;;
+              stage) export moving_tag="beta"
+                ;;
+              *) export moving_tag="alpha"
+                ;;
+            esac
+            docker tag app "jaredallard/triton-twilight:${moving_tag}"
+            docker push "jaredallard/triton-twilight:${moving_tag}"
+
+workflows:
+  version: 2
+  build-test-push:
+    jobs:
+      - build:
+          context: Docker
