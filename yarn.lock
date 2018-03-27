@@ -1121,8 +1121,8 @@ stylus@0.54.5, stylus@~0.54.5:
   resolved "https://registry.yarnpkg.com/sylvester/-/sylvester-0.0.21.tgz#2987b1ce2bd2f38b0dce2a34388884bfa4400ea7"
 
 systeminformation@^3.37.7:
-  version "3.37.7"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-3.37.7.tgz#dd0fba9dfae8795e2de60267bdfbbf58cb80b606"
+  version "3.37.8"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-3.37.8.tgz#0b42af1faf3c0b77788bbc5b56ca5f0e9f58ee73"
 
 to-fast-properties@^1.0.3:
   version "1.0.3"
@@ -1133,8 +1133,8 @@ token-stream@0.0.1:
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-0.0.1.tgz#ceeefc717a76c4316f126d0b9dbaa55d7e7df01a"
 
 triton-core@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/triton-core/-/triton-core-1.0.1.tgz#ff6169558f24bd8bcf20abb2e17e1408968d46d1"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/triton-core/-/triton-core-1.0.2.tgz#90879253210c62fd7923e884e79437569504cb53"
   dependencies:
     debug "^3.1.0"
     fs-extra "^5.0.0"
