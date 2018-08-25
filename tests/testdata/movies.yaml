@@ -1,0 +1,27 @@
+movies:
+  valid:
+    - name: 'Ansatsu Kyoushitsu 2x17.mkv'
+      data:
+        season: 2
+        episode: 17
+    - name: '[Prefix] Hello World 1x12 (1920x1080).mkv'
+      data:
+        season: 1
+        episode: 12
+    - name: '[Lit Club] ASsdfasd x12 (193232x13194).mkv'
+      data:
+        season: 1
+        episode: 12
+    - name: 'Hello World 1x2.mkv'
+      data:
+        season: 1
+        episode: 2
+    - name: '[Prefix]Gintama_-_004_(10bit_BD720p_x265).mkv'
+      data:
+        season: 1
+        episode: 4
+    - name: 'Welcome_to_the_NHK_01_(DVD_480p)_(Suffix).mkv'
+      data:
+        season: 1
+        episode: 1
+  invalid:
