@@ -6,10 +6,10 @@ const file = process.argv[2]
 
 console.log('uploading', file)
 
-const init = async function() {
+const init = async function () {
   try {
     const response = await request({
-      url: "http://127.0.0.1:8001/v1/media/1",
+      url: 'http://127.0.0.1:8001/v1/media/1',
       method: 'PUT',
       formData: {
         file: {
@@ -23,7 +23,7 @@ const init = async function() {
     })
 
     console.log('got', response.body)
-  } catch(err) {
+  } catch (err) {
     console.log('err', err.message)
     process.exit(1)
   }
