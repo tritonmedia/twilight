@@ -1,0 +1,9 @@
+cards:
+  valid:
+  - name: KonoSuba Season 2
+    expected:
+      name: KonoSuba
+  - name: KonoSuba
+    expected:
+      name: KonoSuba
+    

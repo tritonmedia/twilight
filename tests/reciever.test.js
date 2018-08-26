@@ -20,3 +20,18 @@ describe('getName()', () => {
     })
   })
 })
+
+describe('getSeriesName()', () => {
+  const cardData = yaml.safeLoadAll(fs.readFileSync(path.join(__dirname, './testdata/cards.yaml')))
+  const { getSeriesName } = require('../lib/reciever')
+
+  const cards = cardData[0].cards.valid
+
+  cards.forEach(card => {    
+    it(`should properly parse: '${card.name}'`, () => {
+      const name = getSeriesName(card.name)
+
+      expect(name).to.equal(card.expected.name, 'Failed to determine correct series name')
+    })
+  })
+})

@@ -24,4 +24,8 @@ movies:
       data:
         season: 1
         episode: 1
+    - name: '[Prefix] KonoSuba II 10 .mkv'
+      data:
+        season: 2
+        episode: 10
   invalid:
