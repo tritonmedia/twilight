@@ -28,4 +28,8 @@ movies:
       data:
         season: 2
         episode: 10
+    - name: '[Prefix] Sword Art Online II - 01v2mkv'
+      data:
+        season: 2
+        episode: 1
   invalid:
