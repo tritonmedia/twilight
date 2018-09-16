@@ -32,4 +32,17 @@ movies:
       data:
         season: 2
         episode: 1
-  invalid:
+    - name: '01. Hello [BD 1080p Hi10p AAC dual-audio][world].mkv'
+      data:
+        season: 1
+        episode: 1
+    - name: '100. Hello [BD 1080p Hi10p AAC dual-audio][world].mkv'
+      data:
+        season: 1
+        episode: 100
+    - name: '[Prefix] Some OVA (1080p Blu-ray 8bit AAC).mp4'
+      data: null
+    - name: '[HelloWorld][100][Fuck][My][Life][How][Did][This][Seem][Like][A][Good][IDEA].mkv'
+      data:
+        season: 1
+        episode: 100

@@ -14,6 +14,11 @@ describe('getName()', () => {
     it(`should properly parse: '${movie.name}'`, () => {
       const data = getName('test', movie.name, 1)
 
+      // check if we want it to fail
+      if (!movie.data) {
+        return expect(data).to.equal(null)
+      }
+
       expect(data).to.be.a.instanceof(Object)
       expect(data.season).to.equal(movie.data.season, 'Failed to determine correct season')
       expect(data.episode).to.equal(movie.data.episode, 'Failed to determine correct episode')
@@ -30,6 +35,11 @@ describe('getSeriesName()', () => {
   cards.forEach(card => {    
     it(`should properly parse: '${card.name}'`, () => {
       const name = getSeriesName(card.name)
+
+      // check if we want it to fail
+      if (!card.expected) {
+        return expect(name).to.equal(null)
+      }
 
       expect(name).to.equal(card.expected.name, 'Failed to determine correct series name')
     })
