@@ -40,9 +40,17 @@ movies:
       data:
         season: 1
         episode: 100
-    - name: '[Prefix] Some OVA (1080p Blu-ray 8bit AAC).mp4'
-      data: null
     - name: '[HelloWorld][100][Fuck][My][Life][How][Did][This][Seem][Like][A][Good][IDEA].mkv'
       data:
         season: 1
         episode: 100
+    
+    # These should be ignored.
+    - name: '[Prefix] Some OVA (1080p Blu-ray 8bit AAC).mp4'
+      data: null
+    - name: '[PREFIX] NCED.mkv'
+      data: null
+    - name: '[PREFIX] NCOP.mkv'
+      data: null
+    - name: '[Prefix] Bad Show - WHAT IS GOING ON? [HASH?].mkv'
+      data: null
