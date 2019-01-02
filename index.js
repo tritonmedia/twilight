@@ -6,15 +6,21 @@
  * @version 1
  */
 
-const debug = require('debug')('media:converter')
+const path = require('path')
+const logger = require('pino')({
+  name: path.basename(__filename)
+})
 const Config = require('triton-core/config')
+const Tracer = require('triton-core/tracer').initTracer
 
-debug('init', Date.now())
+const tracer = Tracer('twilight', logger)
+
+logger.info('init', Date.now())
 
 const init = async () => {
   const config = await Config('media')
 
-  await require('./lib/reciever')(config)
+  await require('./lib/reciever')(config, tracer)
 }
 
 init()
