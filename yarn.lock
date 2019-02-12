@@ -2000,9 +2000,9 @@ tough-cookie@~2.4.3:
     punycode "^1.4.1"
 
 triton-core@^1.0.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/triton-core/-/triton-core-1.5.2.tgz#e20ba57bd2f905a6e9e48edf28774523d318317d"
-  integrity sha512-DnzgSsruzGJNKVKEwkG7EIZdYS4Gr9fAU1Q+xs61KPTwcwvGahNWirh8Ut5izAccCFee6osbdQQ/5+BKHcazyw==
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/triton-core/-/triton-core-1.5.3.tgz#ff374f74d812406b6d5a9c607c74e5170bfd2fba"
+  integrity sha512-Es4m2Vad1Njm78EiGf9dugfo8YEf5ncuotBRvmlTJEoAsPy2DXyCAXLFJokiZ4q/Jarcs4O67NcXRB3P2tQ7Eg==
   dependencies:
     debug "^3.1.0"
     fs-extra "^5.0.0"
