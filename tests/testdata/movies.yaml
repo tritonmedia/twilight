@@ -50,6 +50,8 @@ movies:
       data: null
     - name: '[PREFIX] NCED.mkv'
       data: null
+    - name: '[PREFIX] NCEDv2.mkv'
+      data: null
     - name: '[PREFIX] NCOP.mkv'
       data: null
     - name: '[Prefix] Bad Show - WHAT IS GOING ON? [HASH?].mkv'
